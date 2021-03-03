@@ -1,0 +1,32 @@
+About the Repository
+
+This repository contains the code resulting from the development process of the
+technical test given to calculate the payment schedule given a start date and duration. 
+This code exposes one API end point called "carbon-offset-schedule".
+
+
+Installation Guidelines
+
+I have used Laravel 8, Homestead to develop the project. To install the code from GitHub
+please do the following. No Database is required for this project.
+
+Goto a location in your machine where you want the project installed.
+Run - git close git@github.com:maheshs4677/apitest.git
+cd to the location
+Run - composer install
+Open the project with a text editor Identify .env.example on the root 
+directory Copy .env.example and rename it to .env
+Run - php artisan key:generate
+Run - php artisan serve
+End point can be accessed via localhost:8000
+
+Example calls
+
+localhost:8000/api/carbon-offset-schedule?subscriptionStartDate=2021-01-07&scheduleInMonths=6
+localhost:8000/api/carbon-offset-schedule?subscriptionStartDate=2021-01-07&scheduleInMonths=0
+localhost:8000/api/carbon-offset-schedule?subscriptionStartDate=2022-01-07&scheduleInMonths=
+localhost:8000/api/carbon-offset-schedule?subscriptionStartDate=2021-01-07&scheduleInMonths=60
+localhost:8000/api/carbon-offset-schedule?subscriptionStartDate=2020-01-31&scheduleInMonths=6
+localhost:8000/api/carbon-offset-schedule?subscriptionStartDate=2021-01-07
+localhost:8000/api/carbon-offset-schedule?scheduleInMonths=6
+localhost:8000/api/carbon-offset-schedule
